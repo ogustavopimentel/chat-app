@@ -1,3 +1,5 @@
+import './src/config/ReactotronConfig'
+
 import React, {Component} from 'react';
 import Routes from './src/Routes'
 

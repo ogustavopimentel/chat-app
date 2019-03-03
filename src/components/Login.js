@@ -37,13 +37,13 @@ export default class Login extends Component {
             .auth()
             .signInWithEmailAndPassword(email, password)
             .then(user => {
-                console.log('Usuário autenticado!', user)
+                console.tron.log('Usuário autenticado!', user)
                 this.props.navigation.navigate('Chat', {
                     Email: email,
                 })
             })
             .catch(error => {
-                alert('Usuário Não encontrado', error)
+                console.tron.log('Usuário Não encontrado', error)
             })
     }
 
